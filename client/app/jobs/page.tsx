@@ -37,7 +37,7 @@ export default function JobsPage() {
             </Link>
             <div className="flex items-center space-x-4">
               <Link href="/login" className="btn btn-secondary">
-                Войти
+                Выйти
               </Link>
             </div>
           </div>

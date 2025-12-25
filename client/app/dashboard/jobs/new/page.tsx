@@ -11,8 +11,8 @@ import { useEffect } from 'react';
 
 const jobSchema = z.object({
   title: z.string().min(5, 'Название должно содержать минимум 5 символов'),
-  description: z.string().min(100, 'Описание должно содержать минимум 100 символов'),
-  requirements: z.string().min(10, 'Укажите хотя бы одно требование'),
+  description: z.string().min(10, 'Описание должно содержать минимум 10 символов'),
+  requirements: z.string().min(1, 'Укажите хотя бы одно требование'),
   salaryMin: z.number().int().min(0).optional(),
   salaryMax: z.number().int().min(0).optional(),
   currency: z.string().default('USD'),

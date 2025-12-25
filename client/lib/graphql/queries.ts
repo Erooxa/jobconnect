@@ -207,6 +207,7 @@ export const GET_JOB_APPLICATIONS = gql`
       }
       coverLetter
       status
+      resume
       notes
       reviewedBy {
         id
